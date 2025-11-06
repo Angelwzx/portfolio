@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTAVIO.DEV - Cyber Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Grid Background -->
+    <div class="cyber-grid"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="glitch" data-text="OTAVIO.DEV">OTAVIO.DEV</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title kawaii-heart">Oi, eu sou o <span class="highlight typing-text"></span></h1>
+            <p class="hero-subtitle kawaii-star">Desenvolvedor Full Stack • UI/UX Designer</p>
+            <p class="hero-description">Criando experiências digitais incríveis com muito amor e café ♥</p>
+            <div class="kawaii-sparkle" style="top: 30%; right: 20%; animation-delay: 1s;">✨</div>
+            <div class="kawaii-sparkle" style="top: 70%; left: 15%; animation-delay: 2s;">💫</div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="cyber-terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                </div>
+                <div class="terminal-body">
+                    <div class="code-line"><span class="prompt">$</span> whoami</div>
+                    <div class="code-line response">otavio_dev</div>
+                    <div class="code-line"><span class="prompt">$</span> cat skills.txt</div>
+                    <div class="code-line response">React • Node.js • Python</div>
+                    <div class="code-line"><span class="prompt">$</span> status</div>
+                    <div class="code-line response blink">ONLINE_</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou um desenvolvedor apaixonado por criar coisas bonitas e funcionais! Adoro trabalhar com tecnologias modernas e sempre busco aprender algo novo.</p>
+                    <p>Quando não estou codando, você pode me encontrar assistindo animes, jogando, ou experimentando um novo café especial. Acredito que a tecnologia deve ser acessível e divertida para todos! ✨</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="35">0</span>
+                            <span class="stat-label">Projetos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Anos de Exp.</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="20">0</span>
+                            <span class="stat-label">Clientes Felizes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Minhas Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card kawaii-bubble">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <p>React • Vue.js • TypeScript • Tailwind CSS</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card kawaii-heart">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend</h3>
+                    <p>Node.js • Python • PostgreSQL • MongoDB</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card kawaii-star">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Design & Mobile</h3>
+                    <p>Figma • React Native • Flutter • PWA</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="https://github.com/Angelwzx/ecommerce-moderno" target="_blank">
+                            <img src="https://via.placeholder.com/400x250" alt="E-commerce Platform">
+                        </a>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Angelwzx/ecommerce-moderno" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Moderno</h3>
+                        <p>Plataforma de e-commerce responsiva com design minimalista e UX intuitiva</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="https://github.com/Angelwzx/task-manager-app" target="_blank">
+                            <img src="https://via.placeholder.com/400x250" alt="Task Manager">
+                        </a>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Angelwzx/task-manager-app" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>App de Tarefas</h3>
+                        <p>Aplicativo fofo de gerenciamento de tarefas com animações suaves</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>PWA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="https://github.com/Angelwzx/weather-dashboard" target="_blank">
+                            <img src="https://via.placeholder.com/400x250" alt="Weather App">
+                        </a>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Angelwzx/weather-dashboard" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard do Tempo</h3>
+                        <p>Interface clean para visualização de dados meteorológicos</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>Charts.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="github-link">
+                <a href="https://github.com/Angelwzx" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Ver mais no GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar!</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="kawaii-heart">Adoraria trabalhar com você! ♥</h3>
+                    <p>Estou sempre aberto para novos projetos, colaborações e conversas sobre tecnologia!</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>otavioaugustocaldeira123@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(31) 99913-5478</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Belo Horizonte, MG</span>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Otavio</h3>
+                    <p>Desenvolvedor Full Stack</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>otavioaugustocaldeira123@gmail.com</p>
+                    <p>(31) 99913-5478</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Angelwzx" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Otavio • Feito com <span class="kawaii-loading">♥</span> e muito café</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>E-commerce Moderno</h2>
+            <img src="https://via.placeholder.com/600x400" alt="E-commerce Moderno">
+            <p>Uma plataforma de e-commerce completa e responsiva, desenvolvida com React e Node.js. Interface limpa e intuitiva, com foco na experiência do usuário e performance otimizada.</p>
+            <div class="modal-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Stripe API</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>App de Tarefas</h2>
+            <img src="https://via.placeholder.com/600x400" alt="App de Tarefas">
+            <p>Um aplicativo fofo e funcional para gerenciamento de tarefas, com animações suaves, sincronização em tempo real e interface minimalista que torna a produtividade mais divertida.</p>
+            <div class="modal-tech">
+                <span>Vue.js</span>
+                <span>Firebase</span>
+                <span>PWA</span>
+                <span>WebSockets</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Dashboard do Tempo</h2>
+            <img src="https://via.placeholder.com/600x400" alt="Dashboard do Tempo">
+            <p>Um dashboard clean e moderno para visualização de dados meteorológicos, com gráficos interativos, previsões detalhadas e design responsivo que funciona perfeitamente em qualquer dispositivo.</p>
+            <div class="modal-tech">
+                <span>JavaScript</span>
+                <span>OpenWeather API</span>
+                <span>Charts.js</span>
+                <span>Leaflet</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
